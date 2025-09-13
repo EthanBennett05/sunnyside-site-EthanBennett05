@@ -1,1 +1,48 @@
 @import "tailwindcss";
+
+/* - Red 400: hsl(7,99%, 70%)
+    Yellow 500: hsl(51, 100%, 49%)
+    Green 800 (graphic design text) : hsl(167, 40%, 24%)
+    Blue 800 (photography text) : hsl(198, 62%, 26%)
+    Green 500 (footer) : hsl(167, 34%, 41%)
+
+*/
+@theme {
+    --color-brightred-400: hsl(7, 99%, 70%);
+    --color-yellow-500: hsl(51, 100%, 49%);
+    --color-green-800: hsl(167, 40%, 24%);
+    --color-blue-800: hsl(198, 62%, 26%);
+    --color-green-500: hsl(167, 34%, 41%);
+
+    --color-skyblue-200: #66bdf9;
+    
+    --font-body: Barlow;
+    --font-headings: Fraunces;
+}
+
+@theme {
+    --color-Grey-950: hsl(212, 27%, 19%);
+    --color-Grey-600: hsl(213, 9%, 39%);
+    --color-Grey-550: hsl(232, 10%, 55%);
+    --color-Grey-400: hsl(210, 4%, 67%);
+    --color-White: hsl(0, 100%, 100%);
+}
+
+
+.fancy-underline {
+  position: relative;
+  z-index: 0;
+}
+
+.fancy-underline:hover::after {
+  content: "";
+  position: absolute;
+  left: -10%;
+  bottom: 0;
+  width: 120%;
+  background-color: var(--color-yellow-500);
+  height: 8px;
+  border-radius: 8px;
+  z-index: -1;
+}
+
