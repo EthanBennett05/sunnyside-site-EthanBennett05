@@ -264,6 +264,9 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .h-150 {
+    height: calc(var(--spacing) * 150);
+  }
   .h-200 {
     height: calc(var(--spacing) * 200);
   }
@@ -352,6 +355,9 @@
   .bg-\[url\(images\/desktop\/image-transform\.jpg\)\] {
     background-image: url(images/desktop/image-transform.jpg);
   }
+  .bg-\[url\(images\/mobile\/image-header\.jpg\)\] {
+    background-image: url(images/mobile/image-header.jpg);
+  }
   .bg-cover {
     background-size: cover;
   }
@@ -405,6 +411,15 @@
   }
   .pt-16 {
     padding-top: calc(var(--spacing) * 16);
+  }
+  .pt-18 {
+    padding-top: calc(var(--spacing) * 18);
+  }
+  .pt-20 {
+    padding-top: calc(var(--spacing) * 20);
+  }
+  .pt-26 {
+    padding-top: calc(var(--spacing) * 26);
   }
   .pt-28 {
     padding-top: calc(var(--spacing) * 28);
@@ -617,6 +632,11 @@
       order: 2;
     }
   }
+  .sm\:mx-auto {
+    @media (width >= 40rem) {
+      margin-inline: auto;
+    }
+  }
   .sm\:flex {
     @media (width >= 40rem) {
       display: flex;
@@ -625,6 +645,11 @@
   .sm\:hidden {
     @media (width >= 40rem) {
       display: none;
+    }
+  }
+  .sm\:h-200 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 200);
     }
   }
   .sm\:grid-cols-2 {
@@ -640,6 +665,11 @@
   .sm\:grid-cols-4 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .sm\:bg-\[url\(images\/desktop\/image-header\.jpg\)\] {
+    @media (width >= 40rem) {
+      background-image: url(images/desktop/image-header.jpg);
     }
   }
   .sm\:px-30 {
@@ -660,6 +690,11 @@
   .sm\:pt-25 {
     @media (width >= 40rem) {
       padding-top: calc(var(--spacing) * 25);
+    }
+  }
+  .sm\:pt-28 {
+    @media (width >= 40rem) {
+      padding-top: calc(var(--spacing) * 28);
     }
   }
   .sm\:pt-30 {
